@@ -11,9 +11,9 @@ import {
 import TodoItem from './TodoItem'
 // eslint-disable-next-line
 import NewTodo from './NewTodo'
-import './App.css'
+import '../App.css'
 // eslint-disable-next-line
-import { firebase as firebaseConf } from './config'
+import { firebase as firebaseConf } from '../config'
 // eslint-disable-next-line
 import GoogleButton from 'react-google-button'
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { withStateHandlers, withHandlers } from 'recompose'
 import { withFirestore } from 'react-redux-firebase'
-import './App.css'
+import '../App.css'
 
 const enhance = compose(
   withFirestore, // firestoreConnect() can also be used

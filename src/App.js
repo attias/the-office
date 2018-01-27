@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import Home from './Home'
+import Home from './components/Home'
 import configureStore from './store'
 import './App.css'
 
