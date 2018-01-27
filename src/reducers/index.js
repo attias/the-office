@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { HELLO_WORLD, RESET } from './../actions'
 
-let initialState = { message: 'Hello' }
+const initialState = {}
 
 const helloWorld = (state=initialState, action) => {
   switch (action.type) {

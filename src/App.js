@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import HelloWorld from './containers/HelloWorld'
+import React from 'react'
+import { Provider } from 'react-redux'
+import Home from './Home'
+import configureStore from './store'
+import './App.css'
 
-class App extends Component {
-  render() {
-    return (
-      <HelloWorld />
-    );
-  }
-}
+const initialState = window.__INITIAL_STATE__
+const store = configureStore(initialState)
 
-export default App;
+export default () => (
+  <Provider store={store}>
+    <Home />
+  </Provider>
+)
