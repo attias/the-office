@@ -11,7 +11,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => dispatch(helloWorld()),
-    reset: () => dispatch(reset())
+    reset: () => dispatch(reset()),
+    onTick: () => dispatch({ type: 'inc'} )
   }
 }
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Hello = ({ onClick, reset, message }) => {
+const Hello = ({ onTick, onClick, reset, message }) => {
   return (
-    <div>
+    <div onMouseMove={onTick}>
       <h1>{ message }</h1>
       <button onClick={onClick}>Click</button>
       &nbsp;
@@ -16,7 +16,8 @@ const Hello = ({ onClick, reset, message }) => {
 Hello.propTypes = {
   onClick: PropTypes.func.isRequired,
   reset: PropTypes.func.isRequired,
-  message: PropTypes.string.isRequired
+  message: PropTypes.string.isRequired,
+  onTick: PropTypes.func.isRequired
 }
 
 export default Hello
